@@ -1,3 +1,5 @@
 FROM nginx
-ADD index.html /usr/share/nginx/html
+RUN apt-get update ; apt-get -y install fortune
+ADD fortuneloop.sh /bin/fortuneloop.sh
+ENTRYPOINT /bin/fortuneloop.sh
 
