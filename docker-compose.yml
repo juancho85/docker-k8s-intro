@@ -1,0 +1,7 @@
+version: '3'
+services:
+  fortune:
+    container_name: fortune
+    image: fortune
+    ports:
+      - "8080:80"
